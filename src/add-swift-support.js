@@ -15,9 +15,7 @@
 *  - It updates the SWIFT_VERSION to 3.0.
 */
 
-// import fs from 'fs';
-// import path from 'path';
-// import xcode from 'xcode';
+
 const fs = require('fs');
 const path = require('path');
 const xcode = require('xcode');
@@ -27,8 +25,7 @@ module.exports = context => {
   
 
 
-
-  const platformMetadata = context.requireCordovaModule('cordova-lib/src/cordova/project_metadata');
+  const platformMetadata = context.requireCordovaModule('cordova-lib/src/cordova/platform_metadata');
   const projectRoot = context.opts.projectRoot;
   const glob = context.requireCordovaModule('glob');
 
